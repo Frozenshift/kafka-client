@@ -1,0 +1,35 @@
+{
+  "name": "@frozenshift/kafka-client",
+  "version": "1.1.1",
+  "description": "Боевой Kafka/Redpanda клиент с ручными коммитами, низкой латентностью и 100% защитой от потери сообщений",
+  "main": "src/index.js",
+  "type": "module",
+  "keywords": [
+    "kafka",
+    "redpanda",
+    "kafkajs",
+    "exactly-once",
+    "low-latency",
+    "telegram-bot",
+    "microservice"
+  ],
+  "author": "frozenshift",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frozenshift/kafka-client.git"
+  },
+  "bugs": {
+    "url": "https://github.com/frozenshift/kafka-client/issues"
+  },
+  "homepage": "https://www.npmjs.com/package/@frozenshift/kafka-client",
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  },
+  "files": [
+    "src/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
