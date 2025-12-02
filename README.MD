@@ -1,6 +1,7 @@
 # @frozenshift/kafka-client
 
-Боевой Kafka/Redpanda клиент для Node.js  
+Боевой Kafka/Redpanda клиент для Node.js 
+Враппер над https://www.npmjs.com/package/kafkajs
 с ручным управлением оффсетами, низкой латентностью, graceful shutdown и 100% защитой от потери сообщений.
 
 Идеально для Telegram-ботов, микросервисов и любых высоконагруженных приложений.
