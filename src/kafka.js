@@ -9,7 +9,9 @@ export class KafkaClient {
         }
 
         this.logger = logger;
-        this.brokers = config.brokers; // строка
+        this.brokers = Array.isArray(config.brokers)
+            ? config.brokers
+            : [config.brokers];
         this.groupId = config.groupId ;
 
         this.kafka = new Kafka({

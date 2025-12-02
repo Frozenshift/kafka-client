@@ -1,4 +1,6 @@
-export async function retry(fn, retries = 5, baseDelay = 300, sleep) {
+import {sleep} from "./sleep.js";
+
+export async function retry(fn, retries = 5, baseDelay = 300) {
     let lastError;
     for (let i = 0; i < retries; i++) {
         try {
